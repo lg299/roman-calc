@@ -1,0 +1,13 @@
+roman calc project
+
+TDD (smallest test first):
+- box being created for the calc ✓
+- boxes within this
+    - display box for screen ✓
+    - number boxes ✓
+    - other buttons ✓
+- dynamic sizing of boxes
+- how to make table interactive
+- test for table
+- split different parts into diff files
+
