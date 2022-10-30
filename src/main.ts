@@ -7,6 +7,7 @@ export function main() {
     dockBorders: true
   });
 
+
   let box = blessed.box({
     parent: screen,
     top: 'center',
@@ -18,7 +19,21 @@ export function main() {
       type: 'line',
     },
   });
+
+  let topBox = blessed.box({
+    parent: screen,
+    top: 0,
+    left: 'center',
+    width: '20%',
+    height: '20%',
+    content: 'Enter a number',
+    border: {
+      type: "line",
+    },
+  });
+
   screen.append(box);
+  screen.append(topBox);
 
   screen.key(['escape', 'q', 'C-c'], function () {
     return process.exit(0);
